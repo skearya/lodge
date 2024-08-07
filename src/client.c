@@ -129,6 +129,7 @@ int main(int argc, char *argv[])
 			{
 				fatal_err("message read");
 			}
+			incoming_message.buffer[incoming_message.len] = '\0';
 
 			printf("%s\n", incoming_message.buffer);
 		}
